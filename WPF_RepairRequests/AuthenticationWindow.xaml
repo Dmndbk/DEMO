@@ -1,0 +1,40 @@
+﻿<Window x:Class="WPF_RepairRequests.AuthenticationWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_RepairRequests"
+        mc:Ignorable="d"
+        Title="Вход" Height="250" Width="300"
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+        <TextBlock Text="Авторизация" FontSize="25" FontWeight="Bold" TextAlignment="Center" Margin="10 10 10 0"/>
+
+        <TextBox x:Name="LoginBox" Grid.Row="1" FontSize="18"  Cursor="" Margin="10 10 10 0"/>
+
+        <PasswordBox x:Name="PasswordBox" Grid.Row="2" FontSize="18" Margin="10 10 10 0"/>
+
+        <Button x:Name="SignIn" Grid.Row="4" Margin="10 10 10 0"
+            Content="Войти"
+            HorizontalAlignment="Center"
+            FontSize="18"
+            FontWeight="Bold"
+            Click="SignIn_Click"/>
+        <Button x:Name="Registration" Grid.Row="5" Margin="10 10 10 0"
+            Content="Зарегистрироваться"
+            HorizontalAlignment="Center"
+            FontSize="18"
+            Background="Transparent"
+            BorderThickness="0"
+                Click="Registration_Click"/>
+    </Grid>
+</Window>
